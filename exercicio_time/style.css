@@ -1,0 +1,7 @@
+img:not(.liverpool){
+    width: 400px;
+}
+
+.liverpool{
+    width: 200px;
+}

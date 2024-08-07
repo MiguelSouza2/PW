@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vestibular -- inscrição</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body class="bg-dark">
+  <form >
+    <table class="bg-light container rounded-4">
+      <thead><h1 class="text-center text-danger">Vestibular Fatec</h1></thead>
+      <tbody>
+        <tr>
+          <td>
+            
+            <tr>
+              <td>
+                <label class="form-label" for="nome">Digite seu nome:</label>
+                <input type="text" name="nome" class="w-50 form-control" />
+              </td>
+              <td>
+                <label class="form-label" for="CPF">Digite seu CPF:</label>
+                <input type="text" name="CPF" class="w-50 form-control" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="form-label" for="email">Digite seu e-mail:</label>
+                <input type="text" name="email" class="form-control" />
+              </td>
+              <td>
+                <label class="form-label" for="no_email">Não possuo e-mail</label>
+                <input class="form-check-input" type="checkbox" name="no_email" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="form-label" for="password">Senha:</label>
+                <input type="text" name="password" class="w-50 form-control" />
+              </td>
+              <td>
+                <label class="form-label" for="confirm_password">Confirme sua senha:</label>
+                <input type="text" name="confirm_password" class="form-control" />
+              </td>
+              <td>
+                <a href="#" class="my-5">Esqueci a senha</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="form-label" for="birthday">Data de nascimento: </label>
+                <input type="date" name="birthday" class="form-control">
+              </td>
+              <td>
+                <label class="form-label" for="id">Identidade: </label>
+                <input type="text" name="id" class="form-control">
+              </td>
+              <td>
+                <p class="form-label">Sexo: </p>
+                <div class="d-flex flex-row">
+                  <input type="radio" name="sexo" id="masc" class="form-check-input">
+                  <label class="form-label" for="masc">Masculino</label>
+                </div>
+                <div class="d-flex flex-row">
+                  <input type="radio" name="sexo" id="fem" class="form-check-input">
+                  <label class="form-label" for="fem">Feminino</label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="form-label" for="org_id">Órgão de expedição: </label>
+                <input type="text" name="org_id" class="form-control">
+              </td>
+              <td>
+                <label class="form-label" for="data_id">Data de expedição: </label>
+                <input type="date" name="data_id" class="form-control">
+              </td>
+              <td>
+                <label class="form-label" for="uf_id">UF de expedição: </label>
+                <select name="uf_id" class="form-select">
+                  <optgroup label="Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                  </optgroup>
+                  <optgroup label="Nordeste">
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+                  </optgroup>
+                  <optgroup label="Centro-Oeste">
+                    <option value="DF">Distrito Federal</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                  </optgroup>
+                  <optgroup label="Sudeste">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                  </optgroup>
+                  <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                  </optgroup>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="form-label" for="escolaridade">Escolaridade</label>
+                <select name="escolaridade" class="form-select">
+                  <option value="Ensino Fundamental">Ensino Fundamental</option>
+                  <option value="Ensino Medio">Ensino Medio</option>
+                  <option value="Ensino Superior">Ensino Superior</option>
+                  <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+                  <option value="Ensino Medio Incompleto">Ensino Medio Incompleto</option>
+                  <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+                </select>
+              </td>
+              <td>
+                <label class="form-label" for="estado_civil">Estado civil: </label>
+                <select name="estado_civil" class="form-select">
+                    <option value=""></option>
+                    <option value="Solteiro">Solteiro</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Separado">Separado</option>
+                    <option value="Divorciado">Divorciado</option>
+                    <option value="Viúvo">Viúvo</option>
+                    <option value="Amasiado">Amasiado</option>
+                </select>
+            </td>
+        </tr>
+        <tr class="my-3">
+            <td>
+                <label class="form-label" for="cpf_mae">CPF da mãe</label>
+                <input class="form-control" type="text" name="cpf_mae">
+            </td>
+            <td>
+                <label class="form-label" for="nome_mae">Nome da mãe</label>
+                <input class="form-control" type="text" name="nome_mae">
+            </td>
+        </tr>
+        <tr class="my-3">
+            <td>
+                <label class="form-label" for="cpf_pai">CPF do pai</label>
+                <input class="form-control" type="text" name="cpf_pai">
+            </td>
+            <td>
+                <label class="form-label" for="nome_pai">Nome do pai</label>
+                <input class="form-control" type="text" name="nome_pai">
+            </td> 
+            
+        </tr>
+        <td class="text-center">
+            <input type="button" class="btn btn-primary" value="submit">
+        </td>
+      </tbody>
+      
+    </table>
+  </main>
+</bo
+
